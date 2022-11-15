@@ -1,0 +1,32 @@
+.story_element {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0 12px;
+}
+
+.story_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+}
+
+.story_title {
+  color: black !important;
+}
+.story_url {
+  font-size: 10px;
+  color: #999999;
+}
+.story_by {
+  position: absolute;
+  top: 35px;
+  left: 20px;
+  
+}
+.story_by a, .story_by{
+    color: #C2C2BE;
+    font-size: 12px;
+} 

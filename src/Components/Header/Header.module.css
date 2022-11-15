@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  background-color: #FF6D01;
+  
+}
+.left_container, .right-container{
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+   
+}
+.pipe{
+   padding: 0 3px;
+}

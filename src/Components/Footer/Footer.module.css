@@ -1,0 +1,10 @@
+footer {
+  text-align: center;
+  font-size: 14px;
+  border-top: 2px solid #ff6d01;
+  padding-bottom: 20px;
+}
+.search-form label {
+  color: #828282;
+  padding: 6px;
+}
