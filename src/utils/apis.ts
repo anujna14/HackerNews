@@ -12,12 +12,12 @@ const getStoryInfo = async (id: number) => {
 };
 
 export const getStoriesIds = async (type: string) => {
-  try {
-    const response = await axios.get(`${BASE_API_URL}/${type}stories.json`);
-    const storyIds = response.data;
-    const stories = await Promise.all(storyIds.slice(0, 30).map(getStoryInfo));
-    return stories;
-  } catch (error) {
-    return { error: error };
-  }
+  const response = await axios.get(`${BASE_API_URL}/${type}stories.json`);
+  const storyIds = response.data;
+  return await Promise.all(storyIds.slice(0, 30).map(getStoryInfo))
+    .then((stories) => stories)
+    // return stories;
+    .catch((error) => {
+      console.log(error);
+    });
 };
